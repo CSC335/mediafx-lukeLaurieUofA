@@ -60,6 +60,7 @@ public class PlayAnMP3 extends Application {
   private class Waiter implements Runnable {
     @Override
     public void run() {
+      // plays a song and exits out of the application
       songsPlayed++;
       System.out.println("Song ended, play song #" + songsPlayed);
       Platform.exit();
